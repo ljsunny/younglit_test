@@ -1,0 +1,174 @@
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-beige: #f1eae2;
+  --color-dark-beige: #dbcdc3;
+  --color-pink: #fe918d;
+  --color-red: #d95252;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #5296a5;
+  --color-yellow: #fff7d1;
+  --color-orange: #f2c861;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+/* Universal tags */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--color-dark-grey);
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Typography  */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  margin: 4px 0;
+}
+
+#home {
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+}
+
+.home__container {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  background-color: blueviolet;
+  transition: all 1s ease-in-out;
+}
+
+.sec1 {
+  width: 100%;
+  background-color: red;
+}
+
+.sec2 {
+  width: 100%;
+  background-color: orange;
+}
+
+.sec3 {
+  width: 100%;
+  background-color: yellow;
+}
+
+.sec4 {
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+#nav {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 140px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.nav__container {
+  padding: 10px;
+}
+
+.nav__list {
+  cursor: pointer;
+}
+
+.nav__list li {
+  padding: 5px 0;
+  color: white;
+}
+.nav__list li span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -5px 10px 0 0;
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+}
+.nav__list li.active {
+  color: red;
+}
+
+.nav__list li.active span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -5px 10px 0 0;
+  width: 5px;
+  height: 30px;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 15%;
+  transition: height 0.5s ease;
+}
