@@ -106,22 +106,22 @@ p {
 
 .sec1 {
   width: 100%;
-  background-color: red;
+  background-color: #ff9595;
 }
 
 .sec2 {
   width: 100%;
-  background-color: orange;
+  background-color: #ffc889;
 }
 
 .sec3 {
   width: 100%;
-  background-color: yellow;
+  background-color: rgb(255, 255, 130);
 }
 
 .sec4 {
   width: 100%;
-  background-color: yellowgreen;
+  background-color: rgb(208, 255, 113);
 }
 
 #nav {
@@ -131,7 +131,7 @@ p {
   width: 140px;
   height: 200px;
   border: 1px solid black;
-  background-color: black;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -145,20 +145,27 @@ p {
 
 .nav__list li {
   padding: 5px 0;
-  color: white;
+  color: black;
 }
+.nav__list li:hover {
+  color: deeppink;
+}
+
 .nav__list li span {
   display: inline-block;
   vertical-align: middle;
   margin: -5px 10px 0 0;
   width: 5px;
   height: 5px;
-  border: 1px solid white;
+  border: 1px solid black;
   background-color: white;
   border-radius: 50%;
 }
+.nav__list li span :hover {
+  color: deeppink;
+}
 .nav__list li.active {
-  color: red;
+  color: deeppink;
 }
 
 .nav__list li.active span {
@@ -167,8 +174,8 @@ p {
   margin: -5px 10px 0 0;
   width: 5px;
   height: 30px;
-  border: 1px solid red;
-  background-color: red;
-  border-radius: 15%;
+  border: 1px solid deeppink;
+  background-color: deeppink;
+  border-radius: 25%;
   transition: height 0.5s ease;
 }
